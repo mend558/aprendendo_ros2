@@ -8,7 +8,6 @@ from launch.substitutions import LaunchConfiguration
 
 def generate_launch_description():
 
-
     log_level = DeclareLaunchArgument(
         name='log_level', 
         default_value='INFO', 

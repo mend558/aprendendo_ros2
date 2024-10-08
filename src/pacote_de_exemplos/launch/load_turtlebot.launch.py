@@ -67,6 +67,13 @@ def generate_launch_description():
         ]
     )
 
+    simulation = IncludeLaunchDescription(
+        PythonLaunchDescriptionSource([get_package_share_directory('pacote_de_exemplos'),'/launch/simulation.launch.py']),
+        launch_arguments={
+            
+        }
+    )
+
     rviz_cmd = IncludeLaunchDescription(
         PythonLaunchDescriptionSource([get_package_share_directory('nav2_bringup'),'/launch/rviz_launch.py']),
         launch_arguments={
